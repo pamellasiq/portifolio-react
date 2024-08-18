@@ -1,0 +1,109 @@
+.Nav_wrapper{
+    min-height: 100vh;
+    width: 120px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.Nav_wrapper ul{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+    transform: rotate(270deg);
+}
+
+.Nav_wrapper ul li a{
+    color: var(--text-color);
+    font-weight: 500;
+    transition: .6s;
+}
+
+.Nav_wrapper ul li:hover a{
+    color: var(--prim-color);
+}
+
+.logo a{
+    padding: 18px 20px;
+    background-color: var(--prim-color);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--logo-color);
+}
+
+.nav_btns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav_btns i{
+    background-color: var(--prim-color);
+    padding: 15px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.nav_btns i:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.nav_btns i:nth-of-type(2){
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .nav_btns i:nth-of-type(2){
+        display: flex;
+    }
+
+    .nav_btns{
+        flex-direction: row;
+    }
+
+    .Nav_wrapper{
+        min-height: auto;
+        height: 80px;
+        width: 100%;
+        flex-direction: row;
+        padding: 0 12%;
+        position: fixed;
+        top: 0;
+        border-bottom: 0.5px solid var(--prim-color)
+    }
+
+    .Nav_wrapper ul{
+        transform: rotate(0);
+        flex-direction: column;
+        position: absolute;
+        top: 101%;
+        left: -100%;
+        width: 100%;
+        background-color: #fff;
+        transition: .6s;
+    }
+
+    .Nav_wrapper .showMenu{
+        left: 0;
+    }
+
+    .Nav_wrapper ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Nav_wrapper ul li:first-child{
+        margin-top: 20px;
+    }
+
+    .Nav_wrapper ul li:last-child{
+        margin-bottom: 20px;
+    }
+}
