@@ -1,0 +1,117 @@
+.header_wrapper{
+    padding: 0% 7%;
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header_wrapper small{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.header_wrapper h2{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+    background-color: #ffffff45;
+}
+
+.header_wrapper p{
+    width: 30%;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+
+.header_wrapper .social{
+    display: flex;
+    gap: 8px;
+}
+
+.header_wrapper .social i{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #fab300;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.header_wrapper .social:hover i:not(:hover){
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 8px #fff;
+}
+
+
+@media screen and (min-width:300px) and (max-width: 700px){
+    .header_wrapper{
+        gap: 10px;
+    }
+
+    .header_wrapper small{
+        font-size: 9px;
+    }
+
+    .header_wrapper p{
+        width: 100%;
+        font-size: 9px;
+        background-color: #ffffff24;
+        backdrop-filter: blur(15px);
+        padding: 25px;
+    }
+    .header_wrapper h2{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 18px;
+    }
+
+    .header_wrapper .social i {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1000px) {
+
+    .header_wrapper{
+        gap: 30px;
+    }
+
+    .header_wrapper small{
+        font-size: 16px;
+    }
+
+    .header_wrapper p{
+        width: 60%;
+        font-size: 16px;
+        background-color: #ffffff24;
+        backdrop-filter: blur(15px);
+    }
+    .header_wrapper h2{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 24px;
+    }
+
+    .header_wrapper .social i {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+}

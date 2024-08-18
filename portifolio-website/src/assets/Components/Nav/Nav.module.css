@@ -94,9 +94,8 @@
     }
 
     .Nav_wrapper ul li{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block;
+        padding-left: 12%;
     }
 
     .Nav_wrapper ul li:first-child{

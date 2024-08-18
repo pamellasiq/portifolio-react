@@ -28,3 +28,26 @@
     background-size: cover;
     display: flex;
 }
+
+
+button{
+    height: 45px;
+    width: 165px;
+    background-color: var(--bg-color);
+    border: none;
+    color: #fab300;
+    font-weight: 500;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    border-radius: 30px;
+    transition: .6s;
+}
+
+button:hover{
+    background-color: #1e1e1e;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
