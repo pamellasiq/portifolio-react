@@ -7,6 +7,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 60px 0;
+    position: fixed;
+    z-index: 3;
 }
 
 .Nav_wrapper ul{
@@ -75,7 +77,8 @@
         padding: 0 12%;
         position: fixed;
         top: 0;
-        border-bottom: 0.5px solid var(--prim-color)
+        border-bottom: 0.5px solid var(--prim-color);
+        z-index: 3;
     }
 
     .Nav_wrapper ul{
