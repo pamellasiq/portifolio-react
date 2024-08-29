@@ -28,6 +28,7 @@
     background: url('assets/images/header-new-test.png');
     background-position: center top;
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
 }
 
